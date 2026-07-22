@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: ISC
+
+option(
+    'usb-ids-path',
+    type: 'string',
+    value: '',
+    description: 'Path to the usb.ids database (default: <prefix>/<datadir>/hwdata/usb.ids)',
+)

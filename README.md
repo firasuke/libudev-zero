@@ -55,15 +55,16 @@ Keep in mind that libudev-zero isn't ideal. Here are some pros/cons:
 ## Dependencies
 
 * C99 compiler (build time)
-* POSIX make (build time)
+* meson (build time)
 * POSIX & XSI libc
 * Linux >= 2.6.39
 
 ## Installation
 
 ```sh
-make
-make PREFIX=/usr install
+meson setup build --prefix /usr
+meson compile -C build
+meson install -C build
 ```
 
 ## Hotplugging
